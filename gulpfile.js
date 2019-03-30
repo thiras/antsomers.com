@@ -12,6 +12,7 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+const sitemap = require("gulp-sitemap");
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -61,6 +62,16 @@ function moveHtml() {
     .src("./*.html")
     .pipe(gulp.dest("./dist"))
     .pipe(browsersync.stream())
+}
+
+// Sitemap generation
+function makeSitemap() {
+  return gulp
+    .src("./*.html")
+    .pipe(sitemap({
+      siteUrl: "https://antsomers.com"
+    }))
+    .pipe(gulp.dest("./dist"))
 }
 
 // Bring third party dependencies from node_modules into vendor directory
@@ -138,7 +149,7 @@ function watchFiles() {
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
-const build = gulp.series(vendor, gulp.parallel(css, js, moveImages, moveHtml));
+const build = gulp.series(vendor, gulp.parallel(css, js, moveImages, moveHtml, makeSitemap));
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
 // Export tasks
