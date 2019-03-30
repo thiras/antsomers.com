@@ -57,9 +57,9 @@ function moveImages() {
 }
 
 // Move htmls when build called
-function moveHtml() {
+function moveRootfiles() {
   return gulp
-    .src("./*.html")
+    .src(["./*.html", "./*.txt"])
     .pipe(gulp.dest("./dist"))
     .pipe(browsersync.stream())
 }
@@ -142,14 +142,14 @@ function js() {
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
   gulp.watch("./js/**/*", js);
-  gulp.watch("./*.html", moveHtml)
+  gulp.watch("./*.html", moveRootfiles)
   gulp.watch("./img/**", moveImages)
   gulp.watch("./**/*.html", browserSyncReload);
 }
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
-const build = gulp.series(vendor, gulp.parallel(css, js, moveImages, moveHtml, makeSitemap));
+const build = gulp.series(vendor, gulp.parallel(css, js, moveImages, moveRootfiles, makeSitemap));
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
 // Export tasks
