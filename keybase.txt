@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/thiras
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://antsomers.com
+  * I am thiras (https://keybase.io/thiras) on keybase.
+  * I have a public key ASD8tGf8azbNbZgfdOq42X7ViOhWc8K4iSEgLVD7v1qiNgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101e9ad3b2e5d830bb65babdc0af914efea003047d96a96fc7d32e052b8aaae82770a",
+      "host": "keybase.io",
+      "kid": "0120fcb467fc6b36cd6d981f74eab8d97ed588e85673c2b88921202d50fbbf5aa2360a",
+      "uid": "8afd7e550066c7686de3fbf83bbced19",
+      "username": "thiras"
+    },
+    "merkle_root": {
+      "ctime": 1578609034,
+      "hash": "4874e6c17fa49b719e4762fd84b6517f9e7236b8e62a9593cfd03468efdf8b6db15129166098b05b3f78df2db60d19960e3380da4f8b0104252d20bd3ae6011d",
+      "hash_meta": "24cbbc219b81c06cca538949b94ee3cb0dba3f04376e11c6d4270b36a71aa28c",
+      "seqno": 14161336
+    },
+    "service": {
+      "entropy": "XT1N8Prvt+0p2OiAuovxPvhd",
+      "hostname": "antsomers.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1578609048,
+  "expire_in": 504576000,
+  "prev": "b7c5eacca3c7d8e65e018d39ceabc5221efdc5163c457673fdf1aeff5fb7bd08",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/LRn/Gs2zW2YH3TquNl+1YjoVnPCuIkhIC1Q+79aojYKp3BheWxvYWTESpcCB8Qgt8XqzKPH2OZeAY05zqvFIh79xRY8RXZz/fGu/1+3vQjEIOzfXOaOEqTYDRxM+3dCQVTzjL34BMdyfFWoDi2uX/uZAgHCo3NpZ8RA3tYzYG00KqHQMnuqC57xpwR2OSmcQsTcK9I5s5RBJrmUZhGgw5vQBt7G+vb2J7N8BdzcWRrH7y6wSI503N9kCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGJM+Vp6pQDT9sbi8mdZwwicKin1aXgTbfn4K07JG9yJo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/thiras
+
+==================================================================
